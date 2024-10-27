@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="Contact form to email.css">
+</head>
+<body>
+	<div class="container">
+		<h2>APPOINTMENT</h2>
+		<form onsubmit="emailSend(); reset(); return false;">
+			<input type="text" id="name" placeholder="name" name="name" required>
+			<input type="text" id="phone" placeholder="phone" name="phone" required>
+			<input type="email" id="email" placeholder="email" name="email" required>
+            <input type="date" id="date" placeholder="date" name="date" required>
+            <input type="time" id="time" placeholder="time" name="time" required>
+            <input type="addresss" id="address" placeholder="address" name="address" required>
+            PhotoStyle: <select id="photostyle" name="photostyle" required>
+                <option>birthday Photoshoot</option>
+                <option>marriage Photoshoot</option>
+                <option>engegment Photoshoot</option>
+                <option>diwali Photoshoot</option>
+                <option>other Photoshoot</option>
+            </select>
+			<button type="submit" class="btn">submit</button>
+		</form>
+	</div> 
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+	<script src="Contact form to email.js"></script>
+</body>
+</html>
